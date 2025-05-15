@@ -18,7 +18,7 @@ function removeDuplicates(array &$nums): int {
 function removeDuplicatesAlternative(&$nums) {
     $candidate = null;
     $k = 0;
-    $lenght = count($nums);
+    $lenght = count($nums);// obtener primero el lenght ayuda a la eficiencia, si hgao esto en el for se ejecuta el count por cada iteracion
 
     for($i = 0; $i < $lenght; $i++){
         $el = $nums[$i];
